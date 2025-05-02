@@ -150,6 +150,7 @@ export default async (env, argv) => {
     devServer: isProduction
       ? {}
       : {
+          disableHostCheck: true,
           devMiddleware: { writeToDisk: true },
           static: {
             directory: path.join(__dirname, "static"),

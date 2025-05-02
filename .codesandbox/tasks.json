@@ -1,0 +1,78 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "npm install",
+      "name": "Installing Dependencies"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "build-map": {
+      "name": "build-map",
+      "command": "npm run build-map",
+      "runAtStart": false
+    },
+    "build-dev": {
+      "name": "build-dev",
+      "command": "npm run build-dev",
+      "runAtStart": false
+    },
+    "build-prod": {
+      "name": "build-prod",
+      "command": "npm run build-prod",
+      "runAtStart": false
+    },
+    "start:client": {
+      "name": "start:client",
+      "command": "npm run start:client",
+      "runAtStart": false
+    },
+    "start:server": {
+      "name": "start:server",
+      "command": "npm run start:server",
+      "runAtStart": false
+    },
+    "start:server-dev": {
+      "name": "start:server-dev",
+      "command": "npm run start:server-dev",
+      "runAtStart": false
+    },
+    "dev": {
+      "name": "dev",
+      "command": "npm run dev",
+      "runAtStart": true
+    },
+    "tunnel": {
+      "name": "tunnel",
+      "command": "npm run tunnel",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "npm run test",
+      "runAtStart": false
+    },
+    "format": {
+      "name": "format",
+      "command": "npm run format",
+      "runAtStart": false
+    },
+    "lint": {
+      "name": "lint",
+      "command": "npm run lint",
+      "runAtStart": false
+    },
+    "lint:fix": {
+      "name": "lint:fix",
+      "command": "npm run lint:fix",
+      "runAtStart": false
+    },
+    "prepare": {
+      "name": "prepare",
+      "command": "npm run prepare",
+      "runAtStart": false
+    }
+  }
+}
