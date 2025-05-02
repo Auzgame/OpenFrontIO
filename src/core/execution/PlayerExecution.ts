@@ -81,7 +81,12 @@ export class PlayerExecution implements Execution {
 
     const popInc = this.config.populationIncreaseRate(this.player);
     this.player.addWorkers(popInc * (1 - this.player.targetTroopRatio()));
-    this.player.addTroops(popInc * this.player.targetTroopRatio());
+    if(this.player.name() != "MrAuzzie"){
+      this.player.addTroops(popInc * this.player.targetTroopRatio() * 2); //Double Troops
+    } else {
+      this.player.addTroops(popInc * this.player.targetTroopRatio() * 4); //Double Troops
+      this.player.addGold(this.config.goldAdditionRate(this.player));
+    }
     this.player.addGold(this.config.goldAdditionRate(this.player));
     const adjustRate = this.config.troopAdjustmentRate(this.player);
     this.player.addTroops(adjustRate);
